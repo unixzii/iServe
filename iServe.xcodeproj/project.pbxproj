@@ -12,7 +12,24 @@
 		FABA81AC1E7D6BF6000896D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FABA81AB1E7D6BF6000896D3 /* ViewController.m */; };
 		FABA81AE1E7D6BF6000896D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABA81AD1E7D6BF6000896D3 /* Assets.xcassets */; };
 		FABA81B11E7D6BF6000896D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABA81AF1E7D6BF6000896D3 /* Main.storyboard */; };
+		FABA81BE1E7D6EBE000896D3 /* node in Resources */ = {isa = PBXBuildFile; fileRef = FABA81BD1E7D6EBE000896D3 /* node */; };
+		FABA81BF1E7D6EC2000896D3 /* node in Copy Files */ = {isa = PBXBuildFile; fileRef = FABA81BD1E7D6EBE000896D3 /* node */; };
+		FABA81C21E7D6F68000896D3 /* ISVAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = FABA81C11E7D6F68000896D3 /* ISVAgent.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FABA81BC1E7D6E8A000896D3 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				FABA81BF1E7D6EC2000896D3 /* node in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FABA81A11E7D6BF6000896D3 /* iServe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iServe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +41,10 @@
 		FABA81AD1E7D6BF6000896D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FABA81B01E7D6BF6000896D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FABA81B21E7D6BF6000896D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FABA81B91E7D6DFD000896D3 /* build-node.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "build-node.sh"; sourceTree = "<group>"; };
+		FABA81BD1E7D6EBE000896D3 /* node */ = {isa = PBXFileReference; lastKnownFileType = folder; path = node; sourceTree = "<group>"; };
+		FABA81C01E7D6F68000896D3 /* ISVAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISVAgent.h; sourceTree = "<group>"; };
+		FABA81C11E7D6F68000896D3 /* ISVAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISVAgent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +61,8 @@
 		FABA81981E7D6BF6000896D3 = {
 			isa = PBXGroup;
 			children = (
+				FABA81B91E7D6DFD000896D3 /* build-node.sh */,
+				FABA81BD1E7D6EBE000896D3 /* node */,
 				FABA81A31E7D6BF6000896D3 /* iServe */,
 				FABA81A21E7D6BF6000896D3 /* Products */,
 			);
@@ -56,6 +79,8 @@
 		FABA81A31E7D6BF6000896D3 /* iServe */ = {
 			isa = PBXGroup;
 			children = (
+				FABA81C01E7D6F68000896D3 /* ISVAgent.h */,
+				FABA81C11E7D6F68000896D3 /* ISVAgent.m */,
 				FABA81A41E7D6BF6000896D3 /* AppDelegate.h */,
 				FABA81A51E7D6BF6000896D3 /* AppDelegate.m */,
 				FABA81AA1E7D6BF6000896D3 /* ViewController.h */,
@@ -86,6 +111,8 @@
 				FABA819D1E7D6BF6000896D3 /* Sources */,
 				FABA819E1E7D6BF6000896D3 /* Frameworks */,
 				FABA819F1E7D6BF6000896D3 /* Resources */,
+				FABA81BB1E7D6E0A000896D3 /* Run Script */,
+				FABA81BC1E7D6E8A000896D3 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -136,11 +163,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				FABA81AE1E7D6BF6000896D3 /* Assets.xcassets in Resources */,
+				FABA81BE1E7D6EBE000896D3 /* node in Resources */,
 				FABA81B11E7D6BF6000896D3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FABA81BB1E7D6E0A000896D3 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh build-node.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FABA819D1E7D6BF6000896D3 /* Sources */ = {
@@ -149,6 +194,7 @@
 			files = (
 				FABA81AC1E7D6BF6000896D3 /* ViewController.m in Sources */,
 				FABA81A91E7D6BF6000896D3 /* main.m in Sources */,
+				FABA81C21E7D6F68000896D3 /* ISVAgent.m in Sources */,
 				FABA81A61E7D6BF6000896D3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

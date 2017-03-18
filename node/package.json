@@ -1,0 +1,24 @@
+{
+  "name": "iserve-core",
+  "version": "0.1.0",
+  "description": "A minimal static files server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://unixzii.github.com"
+  },
+  "keywords": [
+    "server"
+  ],
+  "author": "Cyandev <unixzii@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.2.0",
+    "koa-static": "^3.0.0",
+    "uuid": "^3.0.1"
+  }
+}
